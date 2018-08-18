@@ -1,0 +1,1 @@
+include ':app', ':study_core', ':study_music', ':study_ui', ':musicplayer'

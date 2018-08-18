@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':study_core')
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    //Banner依赖
+    api 'com.bigkoo:ConvenientBanner:2.1.4'
+    api 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    //RecyclerView依赖
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    //RecyclerView 分割线
+    api 'com.choices.divider:RecyclerView_Divider:1.0.0'
+    //图片处理
+    api 'com.android.support:palette-v7:23.4.0'
+    api 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    api 'jp.wasabeef:glide-transformations:2.0.1'
+
+    api 'me.wcy:lrcview:2.0.1'
+
+
+
+
+
+
+}

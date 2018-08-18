@@ -1,0 +1,4 @@
+<vector android:height="24dp" android:viewportHeight="1024"
+    android:viewportWidth="1024" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/nav_icon_normal_color" android:pathData="M716.8,356.8v-75.2c0,-70.6 -57.4,-128 -128,-128L128,153.6c-70.6,0 -128,57.4 -128,128v460.8c0,70.6 57.4,128 128,128h460.8c70.6,0 128,-57.4 128,-128v-75.2L1024,779L1024,245L716.8,356.8zM665.6,742.4c0,42.4 -34.4,76.8 -76.8,76.8L128,819.2c-42.3,0 -76.8,-34.5 -76.8,-76.8L51.2,281.6c0,-42.3 34.5,-76.8 76.8,-76.8h460.8c42.4,0 76.8,34.5 76.8,76.8v460.8zM972.8,705.8l-256,-93.1L716.8,411.2l256,-93.1v387.7z"/>
+</vector>

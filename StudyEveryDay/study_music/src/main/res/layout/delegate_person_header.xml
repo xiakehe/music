@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_bg_normal_color">
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/mine_login_rl_bg_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:src="@drawable/load_err"
+            android:padding="@dimen/dp_4" />
+
+        <TextView
+            android:id="@+id/tv_click_login"
+            style="@style/write_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/iv_head_image"
+            android:padding="@dimen/dp_4"
+            android:text="@string/click_login" />
+
+        <TextView
+            android:id="@+id/tv_click_login_info"
+            style="@style/item_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_click_login"
+            android:layout_toEndOf="@+id/iv_head_image"
+            android:text="@string/click_login_info" />
+
+    </RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <TextView
+        android:id="@+id/tv_local_music"
+        style="@style/black_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_local_music"
+        android:gravity="center"
+        android:text="@string/local_music"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_has_buy"
+        app:layout_constraintTop_toBottomOf="@+id/rl_login"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_favorite" />
+
+    <TextView
+        android:id="@+id/tv_has_buy"
+        style="@style/black_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_has_buy"
+        android:gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/has_buy"
+        app:layout_constraintLeft_toRightOf="@+id/tv_local_music"
+        app:layout_constraintRight_toLeftOf="@+id/tv_has_download"
+        app:layout_constraintTop_toBottomOf="@+id/rl_login"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_favorite" />
+
+
+    <TextView
+        android:id="@+id/tv_has_download"
+        style="@style/black_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_has_download"
+        android:gravity="center"
+        android:text="@string/has_download"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintLeft_toRightOf="@id/tv_has_buy"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/rl_login"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_favorite" />
+
+
+    <TextView
+        android:id="@+id/tv_my_favorite"
+        style="@style/black_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableTop="@drawable/ic_favorite"
+        android:gravity="center"
+        android:text="@string/my_favorite"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/rl_login" />
+
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_width="2dp"
+        android:layout_height="42dp"
+        android:background="@color/line_write_bg_color"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_favorite"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/rl_login"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_favorite" />
+
+    <View
+        android:id="@+id/view_line2"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_write_bg_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_favorite" />
+
+</android.support.constraint.ConstraintLayout>

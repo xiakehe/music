@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.xiakehe.studyeveryday">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:name=".app.StudyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Test"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|fontScale"
+            android:label="@string/app_name"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.study_music.com.xkh.music.view.MusicKeyguardActivity"
+            android:taskAffinity="screen.off" />
+
+
+        <activity
+            android:name="com.example.study_music.com.xkh.music.main.FullScreenPlayerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|fontScale" />
+        <activity
+            android:name="com.example.study_music.com.xkh.music.sign.SignInActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|fontScale" />
+
+        <activity
+            android:name=".app.MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|fontScale" />
+
+        <activity
+            android:name="com.example.study_music.com.xkh.music.main.web.WebActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|fontScale" />
+
+        <service
+            android:name="com.example.study_music.com.xkh.music.player.MusicService"
+            android:exported="true"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="android.support.v4.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

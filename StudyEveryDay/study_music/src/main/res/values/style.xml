@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="toolbar_text_left">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/toolbar_text_normal_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sort_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sort_item_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="black_media">
+        <item name="android:textSize">@dimen/sub_title_height</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="write_media">
+        <item name="android:textSize">@dimen/mini_title_height</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+    </style>
+
+    <style name="black50_mini">
+        <item name="android:textSize">@dimen/mini_title_height</item>
+        <item name="android:textColor">@color/black_50p</item>
+    </style>
+    <style name="black50_small">
+        <item name="android:textSize">@dimen/mini_small_title_height</item>
+        <item name="android:textColor">@color/black_50p</item>
+    </style>
+
+    <style name="write_small">
+        <item name="android:textSize">@dimen/mini_small_title_height</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+    </style>
+
+    <style name="write_mini">
+        <item name="android:textSize">@dimen/mini_title_height</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+    </style>
+
+    <style name="write_big">
+        <item name="android:textSize">@dimen/sub_title_height</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+    </style>
+    <style name="write_big_more">
+        <item name="android:textSize">@dimen/title_height</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+    </style>
+
+    <style name="toolbar_icon">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/toolbar_icon_normal_color</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/title_height</item>
+    </style>
+
+
+    <style name="gray_media">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/sub_title_height</item>
+    </style>
+
+    <style name="gray_small">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/mini_small_title_height</item>
+    </style>
+
+    <style name="gray_mini">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/mini_title_height</item>
+    </style>
+
+    <style name="black_mini">
+        <item name="android:textColor">@color/black_50p</item>
+        <item name="android:textSize">@dimen/mini_small_title_height</item>
+    </style>
+
+    <style name="black_bold_big">
+        <item name="android:textColor">@color/black_50p</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/title_height</item>
+    </style>
+
+    <style name="big_title">
+        <item name="android:textColor">@color/home_item_big_title_color</item>
+        <item name="android:textSize">@dimen/title_height</item>
+    </style>
+
+    <style name="item_big_title">
+        <item name="android:textColor">@color/home_item_big_title_color</item>
+        <item name="android:textSize">@dimen/sub_title_height</item>
+    </style>
+
+    <style name="item_title">
+        <item name="android:textColor">@color/home_item_title_color</item>
+        <item name="android:textSize">@dimen/mini_title_height</item>
+    </style>
+
+    <style name="item_sub_title">
+        <item name="android:textColor">@color/home_item_sub_title_color</item>
+        <item name="android:textSize">@dimen/mini_small_title_height</item>
+    </style>
+
+
+    <style name="dialog_in_out" parent="android:Animation.Dialog">
+
+    </style>
+
+    <style name="keyguard_time">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+</resources>

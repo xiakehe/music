@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled  true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1//数据库版本号
+        daoPackage 'com.xkh.music.greendao'//设置DaoMaster、DaoSession、Dao包名
+        targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+        //targetGenDirTest：设置生成单元测试目录
+        //generateTests：设置自动生成单元测试用例
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':study_ui')
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    api 'org.greenrobot:greendao:3.2.2'
+    api 'com.google.android.exoplayer:exoplayer:r2.5.0'
+    api 'com.github.promeg:tinypinyin:1.0.0'
+
+}

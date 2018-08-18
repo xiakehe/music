@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/sort_bg_color"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <ImageView
+            android:id="@+id/iv_one_text_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_drawable_bg_shape"
+            android:src="@drawable/ic_sort_radio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/one_text_image"/>
+
+        <TextView
+            android:id="@+id/one_text_image"
+            style="@style/black_mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/must_listen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/iv_one_text_image"
+            app:layout_constraintTop_toBottomOf="@+id/iv_one_text_image" />
+
+
+        <ImageView
+            android:id="@+id/iv_two_text_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_drawable_bg_shape"
+            android:src="@drawable/ic_sort_everyday"
+            app:layout_constraintLeft_toRightOf="@+id/iv_one_text_image"
+            app:layout_constraintRight_toLeftOf="@+id/iv_three_text_image" />
+
+        <TextView
+            android:id="@+id/two_text_image"
+            style="@style/black_mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recommend_everyday"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_two_text_image"
+            app:layout_constraintLeft_toRightOf="@+id/one_text_image"
+            app:layout_constraintRight_toRightOf="@+id/iv_two_text_image"
+            app:layout_constraintTop_toBottomOf="@+id/iv_two_text_image" />
+
+
+        <ImageView
+            android:id="@+id/iv_three_text_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_drawable_bg_shape"
+            android:src="@drawable/ic_sort_music"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintLeft_toRightOf="@+id/iv_two_text_image"
+            app:layout_constraintRight_toLeftOf="@+id/iv_four_text_image" />
+
+        <TextView
+            android:id="@+id/three_text_image"
+            style="@style/black_mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_menu"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_three_text_image"
+            app:layout_constraintLeft_toRightOf="@+id/two_text_image"
+            app:layout_constraintRight_toRightOf="@+id/iv_three_text_image"
+            app:layout_constraintTop_toBottomOf="@+id/iv_three_text_image" />
+
+        <ImageView
+            android:id="@+id/iv_four_text_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_drawable_bg_shape"
+            android:src="@drawable/ic_sort_range"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintLeft_toRightOf="@+id/iv_three_text_image" />
+
+        <TextView
+            android:id="@+id/four_text_image"
+            style="@style/black_mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_list"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_four_text_image"
+            app:layout_constraintLeft_toRightOf="@+id/three_text_image"
+            app:layout_constraintRight_toRightOf="@+id/iv_four_text_image"
+            app:layout_constraintTop_toBottomOf="@+id/iv_four_text_image" />
+
+    </android.support.constraint.ConstraintLayout>

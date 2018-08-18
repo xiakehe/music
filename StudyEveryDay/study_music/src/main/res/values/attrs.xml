@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="MusicToolBar">
+
+        <attr name="left_title" format="string" />
+        <attr name="center_title" format="string" />
+        <attr name="toolbar_mode" format="string" />
+
+    </declare-styleable>
+</resources>

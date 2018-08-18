@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_listen"
+        android:icon="@drawable/ic_listen_normal"
+        android:title="@string/listen" />
+    <item
+        android:id="@+id/navigation_music"
+        android:icon="@drawable/ic_music2"
+        android:title="@string/music" />
+    <item
+        android:id="@+id/navigation_video"
+        android:icon="@drawable/ic_video_normal"
+        android:title="@string/video" />
+    <item
+        android:id="@+id/navigation_person"
+        android:icon="@drawable/ic_people_normal"
+        android:title="@string/mine" />
+
+</menu>

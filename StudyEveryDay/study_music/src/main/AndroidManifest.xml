@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.study_music" >
+
+    <application>
+        <activity android:name=".com.xkh.music.main.index.album.AlbumInfoDelegate" />
+    </application>
+</manifest>

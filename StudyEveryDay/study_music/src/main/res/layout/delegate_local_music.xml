@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg_normal_color"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.study_music.com.xkh.music.view.MusicToolBar
+            android:id="@+id/tool_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_bg_normal_color"
+            android:minHeight="48dp"
+            app:layout_scrollFlags="enterAlways|scroll" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:layout_marginBottom="@dimen/dp_4"
+            app:tabBackground="?attr/selectableItemBackground"
+            app:tabIndicatorColor="@color/tab_indicator_color"
+            app:tabSelectedTextColor="@color/tab_select_text_color"
+            app:tabTextColor="@color/tab_text_color" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--<View-->
+    <!--android:background="@color/line_write_bg_color"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2dp"/>-->
+
+    <!--<include-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tool_bar_layout"-->
+    <!--layout="@layout/tab_layout_viewpager" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

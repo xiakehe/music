@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/theme_red">
+
+
+    <ImageView
+        android:id="@+id/iv_album_info_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+
+    <ImageView
+        android:id="@+id/iv_album_info_pic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_4" />
+
+    <TextView
+        android:id="@+id/tv_album_info_title"
+        style="@style/write_big_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_album_info_pic"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_toEndOf="@+id/iv_album_info_pic"
+        android:gravity="start"
+        android:text="@string/app_name" />
+
+
+    <TextView
+        android:id="@+id/tv_album_info_artist_title"
+        style="@style/gray_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_toEndOf="@id/iv_album_info_pic"
+        android:gravity="start"
+        android:text="@string/artist_name" />
+
+    <TextView
+        android:id="@+id/tv_album_info_artist"
+        style="@style/write_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_toEndOf="@id/tv_album_info_artist_title"
+        android:gravity="start"
+        android:text="@string/artist_name" />
+
+
+    <TextView
+        android:id="@+id/tv_album_info_public_time_title"
+        style="@style/gray_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_album_info_artist_title"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_toEndOf="@id/iv_album_info_pic"
+        android:gravity="start"
+        android:text="@string/public_time" />
+
+    <TextView
+        android:id="@+id/tv_album_info_public_time"
+        style="@style/write_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_album_info_artist_title"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_toEndOf="@id/tv_album_info_public_time_title"
+        android:gravity="start"
+        android:text="@string/artist_name" />
+
+    <TextView
+        style="@style/write_small"
+        android:id="@+id/tv_album_info_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_comment"
+        android:layout_toEndOf="@+id/iv_album_info_pic"
+        android:layout_alignBottom="@+id/iv_album_info_pic"
+        android:layout_marginStart="@dimen/dp_4"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp_4"
+        android:text="12"
+        android:tint="@color/white"
+        android:tintMode="src_in"
+        android:contentDescription="@string/comment" />
+
+    <TextView
+        style="@style/write_small"
+        android:id="@+id/tv_album_info_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_collect"
+        android:layout_toEndOf="@+id/tv_album_info_comment"
+        android:layout_alignBottom="@+id/iv_album_info_pic"
+        android:layout_marginStart="@dimen/dp_4"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp_4"
+        android:text="12"
+        android:tint="@color/white"
+        android:tintMode="src_in"
+        android:contentDescription="@string/comment" />
+
+
+</RelativeLayout>

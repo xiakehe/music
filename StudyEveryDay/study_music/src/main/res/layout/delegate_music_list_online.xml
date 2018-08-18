@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar_layout"
+        layout="@layout/music_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_music_list_on_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar_layout"
+        android:background="@color/list_bg_normal_color" />
+
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:id="@+id/delegate_controls_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true" />
+
+    <include layout="@layout/loading_layout" />
+
+
+</RelativeLayout>
